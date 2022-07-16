@@ -13,12 +13,12 @@ public class ArrayVisualizer extends JPanel {
 
     private static final long serialVersionUID = 1L;
 
-//    private ShellSort shellSort = new ShellSort();
-//    private InsertionSort insertionSort = new InsertionSort();
-//    private SelectionSort selectionSort = new SelectionSort();
-//    private BubbleSort bubbleSort = new BubbleSort();
+    private ShellSort shellSort = new ShellSort();
+    private InsertionSort insertionSort = new InsertionSort();
+    private SelectionSort selectionSort = new SelectionSort();
+    private BubbleSort bubbleSort = new BubbleSort();
     private GnomeSort gnomeSort = new GnomeSort();
-//    private BrickSort brickSort = new BrickSort();
+    private BrickSort brickSort = new BrickSort();
 
     protected static int[] array;
     private final int[] barColors;
@@ -73,6 +73,6 @@ public class ArrayVisualizer extends JPanel {
     }
 
     protected void sort(int[] array) {
-        gnomeSort.sortWithDelay(array);
+        selectionSort.sortWithDelay(array);
     }
 }
