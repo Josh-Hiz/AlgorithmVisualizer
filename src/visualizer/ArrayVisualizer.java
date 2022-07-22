@@ -73,6 +73,6 @@ public class ArrayVisualizer extends JPanel {
     }
 
     protected void sort(int[] array) {
-        selectionSort.sortWithDelay(array);
+        insertionSort.sortWithDelay(array);
     }
 }
